@@ -42,6 +42,18 @@ describe('Pet Tests', () => {
             })
     })
 
+    it('Update PetId2', () => {
+
+        cy.request({
+            method: 'PUT',
+            url: url+'/v2/pet',
+            body: data.updatePayload3()
+        })
+            .then((response) => {
+                expect(response.status).to.eq(400)
+            })
+    })
+
     it('Delete Pet', () => {
 
         cy.request({

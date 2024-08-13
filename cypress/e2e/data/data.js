@@ -88,6 +88,28 @@ class Data {
         return postData;
     }
 
+    updatePayload3() {
+        const postData = {
+            "id": 2,
+            "category": {
+                "id": 2,
+                "name": "string"
+            },
+            "name": "golden",
+            "photoUrls": [
+                "string"
+            ],
+            "tags": [
+                {
+                    "id": 2,
+                    "name": "string"
+                }
+            ],
+            "status": "available"
+        }
+        return postData;
+    }
+
 
 
 }
