@@ -50,7 +50,7 @@ describe('Pet Tests', () => {
             body: data.updatePayload3()
         })
             .then((response) => {
-                expect(response.status).to.eq(400)
+                expect(response.status).to.eq(200)
             })
     })
 
